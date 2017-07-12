@@ -41,8 +41,8 @@ public class DeviceImpl implements Device {
 	
 	@Override
 	public void joinNetwork(Network network, String ip) {
-		if (ip == null) {
-			throw new NullPointerException("You cannot join network without IP-address (ipAddress = null)!");
+		if (ip == null || ip == "") {
+			throw new NullPointerException("You cannot join network without IP-address!");
 		}
 		if (!ip.matches(IP_V4_TEST_STRING)) {
 			throw new IllegalArgumentException("Both IPs or One of ip is not a LEGAL IPv4 address!");

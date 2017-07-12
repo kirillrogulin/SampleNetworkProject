@@ -11,7 +11,7 @@ import org.apache.logging.log4j.Logger;
 public class Program {
 	public static Logger lg;
 	static {
-		lg = LogManager.getLogger(); 
+		lg = LogManager.getLogger();
 	}
 
 	public static void main(String[] args) {
@@ -37,5 +37,13 @@ public class Program {
 		dev1.response(conDev2Dev1, np1);
 		NetworkPackage np1_recieved = dev2.request(conDev2Dev1);
 			lg.debug("\nPACKAGE RECIEVED: " + np1_recieved.toString() + "\n");
+		NetworkPackage np2 = new NetworkPackage.Builder().setData("Package 22 test")
+					.setDeviceFrom(dev2)
+					.setDeviceTo(dev1)
+					.setPackageType(NetworkPackageType.REQUEST).build();
+				lg.debug("\nPACKAGE CREATED: " + np2.toString() + "\n");
+		dev1.response(conDev1Dev2, np2);
+		NetworkPackage np2_recieved = dev1.request(conDev1Dev2);
+				lg.debug("\nPACKAGE RECIEVED: " + np2_recieved.toString() + "\n");
 	}
 }

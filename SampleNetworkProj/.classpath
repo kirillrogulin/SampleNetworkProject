@@ -4,7 +4,7 @@
 	<classpathentry kind="src" path="resources"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
 	<classpathentry kind="con" path="org.eclipse.jdt.junit.JUNIT_CONTAINER/4"/>
-	<classpathentry kind="lib" path="C:/Users/kiril/Downloads/apache-log4j-2.8.2-bin/apache-log4j-2.8.2-bin/log4j-api-2.8.2.jar"/>
-	<classpathentry kind="lib" path="C:/Users/kiril/Downloads/apache-log4j-2.8.2-bin/apache-log4j-2.8.2-bin/log4j-core-2.8.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rogu_ss76/Downloads/apache-log4j-2.8.2-bin/apache-log4j-2.8.2-bin/log4j-api-2.8.2.jar"/>
+	<classpathentry kind="lib" path="C:/Users/Rogu_ss76/Downloads/apache-log4j-2.8.2-bin/apache-log4j-2.8.2-bin/log4j-core-2.8.2.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
